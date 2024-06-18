@@ -1,21 +1,8 @@
-COVID-Tracker
-Front-End Project
+# React + Vite
 
-Overview
-This project is a front-end dashboard developed using REACT. It dynamically displays information from the Disease Covimap API.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Features
-Dynamic Data Display: The dashboard fetches and updates data from the Disease Covimap API in real-time.
-Responsive Design: Optimized for various screen sizes and devices.
-Interactive Charts: Visualize data through interactive and intuitive charts.
-User-Friendly Interface: Easy to navigate and use for all types of users.
+Currently, two official plugins are available:
 
-Technologies Used
-React: For building the user interface.
-Axios: For making API requests.
-Chart.js: For creating interactive charts and graphs.
-Bootstrap: For responsive design and styling.
-Getting Started
-
-Prerequisites
-Node.js and npm installed on your machine.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
