@@ -1,15 +1,33 @@
 .left-sidebar {
-    width: 250px;
-    background-color: rgb(221, 65, 65);
+    background-color: #fff;
+    color: #000;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    height:  100%;
-    
-    top: 0;
-    top: 0;
-    
+    margin-left: 200px; 
+    height: 100vh; 
+    overflow-y: auto; 
 }
 
-.sidebar {
-    padding: 15px;
+.title-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.profile-detail .list-block-item,
+.country-list .list-block-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.country-list .list-block-item img {
+    width: 30px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.country-list .list-block-item span {
+    flex-grow: 1;
 }
