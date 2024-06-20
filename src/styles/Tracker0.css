@@ -1,0 +1,15 @@
+.left-sidebar {
+    width: 250px;
+    background-color: rgb(221, 65, 65);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height:  100%;
+    
+    top: 0;
+    top: 0;
+    
+}
+
+.sidebar {
+    padding: 15px;
+}
