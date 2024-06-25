@@ -10,3 +10,5 @@ export const fetchData = async () => {
         return null;
     }
 };
+
+export const Apiurl = "https://disease.sh/v3/covid-19/historical/all?lastdays=all"
