@@ -15,28 +15,29 @@ const Tracker0 = () => {
     { name: "Bolivia", code: "bo", cases: "909919" },
   ];
 
+
   return (
     <div className="tracker0-covid-container">
       <h2 className="tracker0-covid-heading">COVID-19 Tracker</h2>
       <ul className="tracker0-covid-list">
         <li className="tracker0-covid-item total-case">
-          <h6>Total Case</h6>
-          <small>+607496</small>
-          <b>581511314</b>
+          <h6 className='title_case'>Total Case</h6>
+          <small className='numsmall'>+607496</small>
+          <b className='number-t'>581511314</b>
         </li>
         <li className="tracker0-covid-item active-case">
-          <h6>Active Case</h6>
-          <small>28732901</small>
+          <h6 className='title_case'>Active Case</h6>
+          <b className='number-a'>28732901</b>
         </li>
         <li className="tracker0-covid-item recovered-case">
-          <h6>Recovered Case</h6>
-          <small>0</small>
-          <b>+0</b>
+          <h6 className='title_case'>Recovered Case</h6>
+          <small className='numsmall' >+0</small>
+          <b className='number-r'>0</b>
         </li>
         <li className="tracker0-covid-item deaths-case">
-          <h6>Deaths Case</h6>
-          <small>+3631</small>
-          <b>6410181</b>
+          <h6 className='title_case'>Deaths Case</h6>
+          <small className='numsmall'>+3631</small>
+          <b className='number-d'>6410181</b>
         </li>
       </ul>
 

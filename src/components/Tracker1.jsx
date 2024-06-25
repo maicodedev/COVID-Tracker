@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import axios from 'axios';
 import '../styles/Tracker1.css';
 
@@ -113,4 +113,3 @@ const Tracker1 = () => {
 };
 
 export default Tracker1;
-

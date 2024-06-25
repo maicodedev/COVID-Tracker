@@ -1,13 +1,15 @@
 .tracker0-covid-container {
     padding: 20px;
-    background-color: #f9f9f9;
+    background-color: #fdfdfd;
     margin-left: 120px; 
     width: calc(100% - 10px); 
 }
 
 .tracker0-covid-heading {
-    font-size: 24px;
+    font-size: 29px;
     margin-bottom: 20px;
+    font-weight: bold;
+    margin-top: -65px;
 }
 
 .tracker0-covid-list {
@@ -22,20 +24,21 @@
 }
 
 .total-case, .active-case, .recovered-case, .deaths-case {
-    padding: 10px;
+    padding: 25px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 25px;
 }
 
 .total-case {
-    background-color: rgb(247, 212, 206);
+    background-color: rgb(255, 232, 228);
 }
 
 .active-case {
-    background-color: rgb(250, 237, 203);
+    background-color: rgb(250, 240, 212);
 }
 
 .recovered-case {
@@ -89,4 +92,47 @@
     text-align: right;
 }
 
+.dz-title {
+    margin-top: 35px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
 
+
+.number-t {
+    font-size: 30px;
+    color: red;
+}
+
+.number-a {
+    font-size: 30px;
+    color: rgb(255, 166, 0);
+}
+
+.number-r {
+    font-size: 30px;
+    color: rgb(48, 196, 3);
+}
+
+.number-d {
+    font-size: 30px;
+    color: rgb(59, 61, 167);
+    text-align: center;
+}
+
+
+.numsmall {
+    font-size: 12px;
+    color: grey;
+    display: inline-block;
+    background-color: white;
+    padding: 1px 3px;
+    line-height: 4;
+    text-align: center;
+}
+
+
+.title_case {
+    margin-top: 15px;
+}

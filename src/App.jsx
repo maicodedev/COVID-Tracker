@@ -1,5 +1,4 @@
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import './styles/Navbar.css';
 import Tracker0 from './components/Tracker0';
@@ -8,15 +7,6 @@ import Tracker1 from './components/Tracker1';
 import './styles/Tracker1.css';
 
 function App() {
-  const [data, setData] = useState(null);
-
-  useEffect(() => {
-    fetch("https://disease.sh/v3/covid-19/historical/all?lastdays=all")
-      .then((response) => response.json())
-      .then((data) => setData(data))
-      .catch((error) => console.error("Error fetching data:", error));
-  }, []);
-
   return (
     <Router>
       <div className="app-container">
@@ -45,3 +35,4 @@ function App() {
 }
 
 export default App;
+

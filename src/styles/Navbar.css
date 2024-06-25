@@ -30,26 +30,69 @@
 }
 
 .navbar-nav li {
-    margin-top: 30px;
+    margin-top: 0px;
     padding: 10px 15px;
     font-size: 25px;
+    position: relative;
 }
 
 .navbar-nav li a {
     text-decoration: none;
     color: #3639ae;
-    display: flex;
-    align-items: center;
+    display: block;
+    padding: 10px 15px;
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s;
+}
+
+.navbar-nav li a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -10px;
+    width: calc(100% + 20px);
+    height: 100%;
+    background-color: #3639ae;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s;
+    border-radius: 8px;
+}
+
+
+.navbar-nav li a:hover::before {
+    opacity: 1;
 }
 
 .navbar-nav li a:hover {
-    background-color: #3639ae;
+    color: #fff;
+}
+
+.navbar-logo {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 25px;
+    animation: rotation 4s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.navbar-logo img {
+    width: 50px;
 }
 
 .navbar-bottom-icon {
     text-align: center;
-    margin-top: 160px;
-    margin-bottom: 15px;
+    margin-top: 130px;
+    margin-bottom: 5px;
     font-size: 25px;
     color: #3639ae;
 }
