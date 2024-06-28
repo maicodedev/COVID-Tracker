@@ -1,10 +1,12 @@
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import './styles/Navbar.css';
 import Tracker0 from './components/Tracker0';
 import './styles/Tracker0.css';
 import Tracker1 from './components/Tracker1';
 import './styles/Tracker1.css';
+import Case0 from './components/Case0';
+import './styles/Case0.css'; 
 
 function App() {
   return (
@@ -18,15 +20,19 @@ function App() {
 
           <nav>
             <ul>
-              <li><Link to="/tracker0">Tracker 0</Link></li>
-              <li><Link to="/tracker1">Tracker 1</Link></li>
+              <li><Link to="/"></Link></li>
+              <li><Link to="/page1"></Link></li>
+              <li><Link to="/tracker1"></Link></li>
             </ul>
           </nav>
 
           <Routes>
-            <Route path="/tracker0" element={<Tracker0 />} />
+            {/* Página principal */}
+            <Route path="/" element={<HomePage />} />
+            {/* Página 1 */}
+            <Route path="/page1" element={<Page1 />} />
+            {/* Tracker 1 */}
             <Route path="/tracker1" element={<Tracker1 />} />
-            <Route path="/" element={<Tracker0 />} />
           </Routes>
         </div>
       </div>
@@ -34,5 +40,24 @@ function App() {
   );
 }
 
+// Componente para la página principal (Navbar + Tracker 0)
+function HomePage() {
+  return (
+    <>
+      <Tracker0 />
+    </>
+  );
+}
+
+// Componente para Page 1 (Navbar + Case 0)
+function Page1() {
+  return (
+    <>
+      <Case0 />
+    </>
+  );
+}
+
 export default App;
+
 

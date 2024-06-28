@@ -1,0 +1,51 @@
+.country {
+    padding: 20px;
+    background-color: #fdfdfd;
+    margin: 20px 20px 20px 140px; 
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.country h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.country ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.country li {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.country li:hover {
+    transform: scale(1.02);
+}
+
+.country .cases {
+    color: #ff4d4d;
+    font-weight: bold;
+}
+
+.country .recovered {
+    color: #2ecc71;
+    font-weight: bold;
+}
+
+.country .deaths {
+    color: #3498db;
+    font-weight: bold;
+}
