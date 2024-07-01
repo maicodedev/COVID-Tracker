@@ -8,23 +8,21 @@ function Country() {
         const fetchData = async () => {
             const response = await fetch("https://disease.sh/v3/covid-19/countries");
             const result = await response.json();
-            
-            const sortedData = result.sort((a, b) => b.cases - a.cases);
-
-            setData(sortedData.slice(0, 10));
+            setData(result.slice(0, 10));
+            console.log(result); 
         };
         fetchData();
     }, []);
 
     return (
         <div className="country">
-            <h3>Top 10 Countries</h3>
+            <h3></h3>
             <ul>
                 {data.map((country, index) => (
                     <li key={index}>
-                        <img src={country.countryInfo.flag} alt={`Flag of ${country.country}`} className="flag" />
                         <span className="cases">{country.country}: {country.cases} cases</span>, 
-                        <span className="active"> {country.active} active</span>
+                        <span className="recovered"> {country.recovered} recovered</span>, 
+                        <span className="deaths"> {country.deaths} deaths</span>
                     </li>
                 ))}
             </ul>
@@ -33,4 +31,3 @@ function Country() {
 }
 
 export default Country;
-

@@ -5,6 +5,8 @@ import Tracker0 from './components/Tracker0';
 import './styles/Tracker0.css';
 import Case0 from './components/Case0';
 import './styles/Case0.css'; 
+import Case from './components/Case';
+import './styles/Case.css'
 
 function App() {
   return (
@@ -14,8 +16,8 @@ function App() {
         <div className="content">
           <nav>
             <ul>
-              <li><Link to="/">Home (Tracker 0)</Link></li>
-              <li><Link to="/page1">Page 1 (Case 0)</Link></li>
+              <li><Link to="/"></Link></li>
+              <li><Link to="/page1"></Link></li>
             </ul>
           </nav>
           <Routes>
@@ -39,9 +41,12 @@ function HomePage() {
 function Page1() {
   return (
     <div>
+      <Case />
       <Case0 />
     </div>
   );
 }
+
+
 
 export default App;
