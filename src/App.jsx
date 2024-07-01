@@ -3,8 +3,6 @@ import Navbar from './components/Navbar';
 import './styles/Navbar.css';
 import Tracker0 from './components/Tracker0';
 import './styles/Tracker0.css';
-import Tracker1 from './components/Tracker1';
-import './styles/Tracker1.css';
 import Case0 from './components/Case0';
 import './styles/Case0.css'; 
 
@@ -14,25 +12,15 @@ function App() {
       <div className="app-container">
         <Navbar />
         <div className="content">
-          <header>
-            <h1></h1>
-          </header>
-
           <nav>
             <ul>
-              <li><Link to="/"></Link></li>
-              <li><Link to="/page1"></Link></li>
-              <li><Link to="/tracker1"></Link></li>
+              <li><Link to="/">Home (Tracker 0)</Link></li>
+              <li><Link to="/page1">Page 1 (Case 0)</Link></li>
             </ul>
           </nav>
-
           <Routes>
-            {/* Página principal */}
             <Route path="/" element={<HomePage />} />
-            {/* Página 1 */}
             <Route path="/page1" element={<Page1 />} />
-            {/* Tracker 1 */}
-            <Route path="/tracker1" element={<Tracker1 />} />
           </Routes>
         </div>
       </div>
@@ -40,24 +28,20 @@ function App() {
   );
 }
 
-// Componente para la página principal (Navbar + Tracker 0)
 function HomePage() {
   return (
-    <>
+    <div>
       <Tracker0 />
-    </>
+    </div>
   );
 }
 
-// Componente para Page 1 (Navbar + Case 0)
 function Page1() {
   return (
-    <>
+    <div>
       <Case0 />
-    </>
+    </div>
   );
 }
 
 export default App;
-
-
